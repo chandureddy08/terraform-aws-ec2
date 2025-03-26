@@ -1,8 +1,10 @@
 # aws vpc custom module
+
 (images/image.png)
 This module is developed for abc.com. We are creating following resources. This module creates resources in first 2 AZ for HA.
 
 ## VPC
+
 * Internet Gateway
 * Internet and VPC attachment
 * 2 Public Subnets.
@@ -19,7 +21,8 @@ This module is developed for abc.com. We are creating following resources. This 
 * Routes of peering in requestor and acceptor VPC.
 * Database sunet group
 
-### Inputs
+## Inputs
+
 * project_name (Required): User should mention their project name. Type is string.
 * environment (Optional): Default value is dev. Type is string.
 * common_tags (Required): User should provide their tags related to their project. Type is map.
@@ -43,6 +46,7 @@ This module is developed for abc.com. We are creating following resources. This 
 * vpc_peering_tags (Optional): Default value is empty. Type is map.
 
 ### Outputs
+
 * vpc_id: VPC ID
 * public_subnet_ids: A list of 2 public subnet IDS created.
 * database_subnet_ids: A list of 2 database subnet IDS created.
